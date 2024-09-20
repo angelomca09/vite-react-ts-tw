@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
+import { DiReact } from "react-icons/di";
+import SyncLoader from "react-spinners/SyncLoader";
 import './App.css'
 
 function App() {
@@ -17,6 +19,12 @@ function App() {
         </a>
       </div>
       <h1>Vite + React</h1>
+      <p className='my-4'>
+        - react-icons <DiReact className='inline-block' fontSize={"2rem"} color='#00d8ff' />
+      </p>
+      <p className='my-4'>
+        - react-spinners <span><SyncLoader color='#00d8ff' /></span>
+      </p>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
